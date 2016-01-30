@@ -3,6 +3,11 @@
  - The directive itself set key/value pair with the `ngModel` **$error** object (which stores a key/value state of validation errors).
  - `useformError` depending on the value of the expression `useErrorExpression` establishes the validity of input form, and accordingly, the entire form.
 
+#Table of contents
+ - [Usage](#usage)
+ - [Description params](#description-parameters)
+ - [Examples](#examples)
+
 ---
 
 # Usage
@@ -13,37 +18,37 @@ It can be used in three versions:
  - Used on tags without `ngModel`, like `div`, `span`, `form`. In this case, the validity of the forms to be used.
 
 ## Using with ngModel
-```
+```html
 	  <input ng-model="expression" use-form-error="keyValue" use-error-expression="expression" />
 ```
 ## Using without ngModel, but with the name of input form
-```
+```html
 	  <input ng-model="expression" name="nameInput">
 	  <any use-form-error="keyValue" use-error-expression="expression" use-error-input="nameInput" />
 ```	  
 ## Using without ngModel, but without the name of input form. 
 
  In this case, the validity of the forms to be used.
-``` 
+```html 
 	  <input ng-model="expression">
 	  <any use-form-error="keyValue" use-error-expression="expression" />
 ```
 ---
 
-# Description params
+# Description parameters
 
-Parameter Description directive.
+Parameters description directive.
 - `@param` {string} **useFormError** this is the key is to be set in the object **$error** form or input form.
 - `@param` {expression} **useErrorExpression** an angular expression evaluating to set validity to form or input form.
 - `@param` {?object} **useErrorInput** an optional parameter that contains a form or the input form. If this parameter is not set, the validity will be set in the form.
 
 ---
 
-# Example	 
+# Examples	 
 Examples of using.
 ## Using with ngModel. 
 Example on [jsfiddle](https://jsfiddle.net/Stepan_Kasyanenko/gugq2o6n)
-```
+```html
 	      <form name="myForm">
 	        <label>Enter your odd digit:</label>
 	        <input type="text"
@@ -68,7 +73,7 @@ Example on [jsfiddle](https://jsfiddle.net/Stepan_Kasyanenko/gugq2o6n)
 ```	 
 ## Using without ngModel
 Example on [jsfiddle](https://jsfiddle.net/Stepan_Kasyanenko/crsqs5nd)
-```
+```html
 	      <form name="myForm">
 	        <label>Your number is not to be divided by three:</label>
 	        <input type="text"
@@ -91,7 +96,7 @@ Example on [jsfiddle](https://jsfiddle.net/Stepan_Kasyanenko/crsqs5nd)
 ```	 
 ## Using both together with ngModel and without ngModel
 Example on [jsfiddle](https://jsfiddle.net/Stepan_Kasyanenko/woqck67w)
-```
+```html
 	      <form name="myForm">
 	        <label>Your number should be even and not divisible by three.</label>
 	        <input type="text"
@@ -117,7 +122,7 @@ Example on [jsfiddle](https://jsfiddle.net/Stepan_Kasyanenko/woqck67w)
 ```	 
 ## Using with ngModel, ngForm and without ngModel
 Example on [jsfiddle](https://jsfiddle.net/Stepan_Kasyanenko/wL9c2feo)
-```
+```html
 	     <form name="myForm" use-form-error="formInvalid" use-error-expression="digit==9">
 	 			<div ng-messages="myForm.$error" style="color:maroon">
 	 				<div ng-message="formInvalid">You form is not valid</div>
