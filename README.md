@@ -1,33 +1,33 @@
 # use-form-error
 **useFormError** is a directive, which is designed to create custom checks.
  - The directive itself set key/value pair with the `ngModel` **$error** object (which stores a key/value state of validation errors).
- - `useformError` depending on the value of the expression useErrorExpression establishes the validity of input form, and accordingly, the entire form.
+ - `useformError` depending on the value of the expression `useErrorExpression` establishes the validity of input form, and accordingly, the entire form.
 
 ---
 
 # Usage
 
 It can be used in three versions:
- - Used on tags with ngModel, like a `input`, `select`, `textarea`.
- - Used on tags without ngModel with the name of input form, like `div`, `span`, `form`.
- - Used on tags without ngModel, like `div`, `span`, `form`. In this case, the validity of the forms to be used.
+ - Used on tags with `ngModel`, like `input`, `select`, `textarea`.
+ - Used on tags without `ngModel` with the name of input form, like `div`, `span`, `form`.
+ - Used on tags without `ngModel`, like `div`, `span`, `form`. In this case, the validity of the forms to be used.
 
 ## Using with ngModel
-
+```
 	  <input ng-model="expression" use-form-error="keyValue" use-error-expression="expression" />
-
+```
 ## Using without ngModel, but with the name of input form
-
+```
 	  <input ng-model="expression" name="nameInput">
 	  <any use-form-error="keyValue" use-error-expression="expression" use-error-input="nameInput" />
-	  
+```	  
 ## Using without ngModel, but without the name of input form. 
 
  In this case, the validity of the forms to be used.
- 
+``` 
 	  <input ng-model="expression">
 	  <any use-form-error="keyValue" use-error-expression="expression" />
-
+```
 ---
 
 # Description params
