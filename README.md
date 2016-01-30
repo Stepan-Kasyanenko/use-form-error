@@ -12,6 +12,11 @@
 
 # Usage
 
+You must connect the module `use` under the project dependencies.
+```javascript
+angular.module('ExampleApp', ['use']);
+```
+
 It can be used in three versions:
  - Used on tags with `ngModel`, like `input`, `select`, `textarea`.
  - Used on tags without `ngModel` with the name of input form, like `div`, `span`, `form`.
