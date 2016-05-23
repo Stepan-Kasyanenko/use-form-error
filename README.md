@@ -4,11 +4,18 @@
  - `useformError` depending on the value of the expression `useErrorExpression` establishes the validity of input form, and accordingly, the entire form.
 
 #Table of contents
+ - [Install](#install)
  - [Usage](#usage)
  - [Description params](#description-parameters)
  - [Examples](#examples)
 
 ---
+# Install
+ Installation with `bower`.
+ 
+ `bower install use-form-error`
+ 
+ Or simply download the file [use-form-error](https://github.com/Stepan-Kasyanenko/use-form-error/raw/master/dist/use-form-error.js)
 
 # Usage
 
