@@ -2,7 +2,6 @@
     "name": "use-form-error",
     "description":"Directive angularjs, which helps to validate the input form",
     "main": [
-      "dist/use-form-error.js",
       "dist/use-form-error.min.js",
     ],
     "dependencies": {
