@@ -4,11 +4,11 @@
     "version":"0.0.1",
     "main": "dist/use-form-error.min.js",
     "authors": [
-        'Stepan Kasyanenko'
+        "Stepan Kasyanenko"
     ],
     "keywords": [
-      'angular',
-      'validation'
+      "angular",
+      "validation"
     ],
     "ignore": [
         "src"
