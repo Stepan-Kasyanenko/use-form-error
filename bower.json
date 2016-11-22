@@ -1,9 +1,16 @@
 {
     "name": "use-form-error",
     "description":"Directive angularjs, which helps to validate the input form",
+    "version":"0.0.1",
+    "main": "dist/use-form-error.min.js",
+    "authors": [
+        'Stepan Kasyanenko'
+    ],
+    "keywords": [
+      'angular',
+      'validation'
+    ],
     "ignore": [
-        "src",
-        "bower.json",
-        "README.md"
+        "src"
     ]
 }
